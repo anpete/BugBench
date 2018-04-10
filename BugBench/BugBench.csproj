@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\aspnet\EntityFrameworkCore\src\EFCore.SqlServer\EFCore.SqlServer.csproj" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0-preview2-*" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.0-preview2-*" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.1.0-preview2-*" />
+    </ItemGroup>
+
+</Project>
